@@ -1,0 +1,318 @@
+﻿<Window x:Class="Pila_Discoteca.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" ResizeMode="NoResize" Icon="Images/icon.png"
+        Title="Discoteca" FontFamily="Fonts/#SegoeUI" FontSize="15"
+        Height="500" Width="940" Background="#f9f9f9">
+    <Grid>
+        <!-- Definizione righe -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="20" />
+            <RowDefinition Height="70" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="20" />
+        </Grid.RowDefinitions>
+
+        <!-- Definizione colonne -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20" />
+            <ColumnDefinition Width="210" />
+            <ColumnDefinition Width="20" />
+            <ColumnDefinition Width="210" />
+            <ColumnDefinition Width="20" />
+            <ColumnDefinition Width="210" />
+            <ColumnDefinition Width="20" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="20" />
+        </Grid.ColumnDefinitions>
+
+
+        <!-- Primo rettangolo di selezione genere musicale -->
+        <Rectangle Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="5" RadiusX="8" RadiusY="8" Margin="2">
+            <Rectangle.Fill>
+                <SolidColorBrush Color="#fafafa" />
+            </Rectangle.Fill>
+            <Rectangle.Effect>
+                <DropShadowEffect BlurRadius="8" ShadowDepth="0" Color="#e2e2e2"/>
+            </Rectangle.Effect>
+        </Rectangle>
+
+        <!-- Primo rettangolo verticale (Hip Hop) -->
+        <Rectangle Grid.Row="3" Grid.Column="1" Grid.RowSpan="2" RadiusX="8" RadiusY="8" Margin="2">
+            <Rectangle.Fill>
+                <SolidColorBrush Color="#fafafa" />
+            </Rectangle.Fill>
+            <Rectangle.Effect>
+                <DropShadowEffect BlurRadius="8" ShadowDepth="0" Color="#e2e2e2"/>
+            </Rectangle.Effect>
+        </Rectangle>
+
+        <!-- Secondo rettangolo verticale (Latino) -->
+        <Rectangle Grid.Row="3" Grid.Column="3" Grid.RowSpan="2" RadiusX="8" RadiusY="8" Margin="2">
+            <Rectangle.Fill>
+                <SolidColorBrush Color="#fafafa" />
+            </Rectangle.Fill>
+            <Rectangle.Effect>
+                <DropShadowEffect BlurRadius="8" ShadowDepth="0" Color="#e2e2e2"/>
+            </Rectangle.Effect>
+        </Rectangle>
+
+        <!-- Terzo rettangolo verticale (Rock) -->
+        <Rectangle  Grid.Row="3" Grid.Column="5" Grid.RowSpan="2" RadiusX="8" RadiusY="8" Margin="2">
+            <Rectangle.Fill>
+                <SolidColorBrush Color="#fafafa" />
+            </Rectangle.Fill>
+            <Rectangle.Effect>
+                <DropShadowEffect BlurRadius="8" ShadowDepth="0" Color="#e2e2e2"/>
+            </Rectangle.Effect>
+        </Rectangle>
+
+        <!-- Rettangolo delle statistiche -->
+        <Rectangle  Grid.Row="3" Grid.Column="7" Grid.RowSpan="2" RadiusX="8" RadiusY="8" Margin="2">
+            <Rectangle.Fill>
+                <SolidColorBrush Color="#fafafa" />
+            </Rectangle.Fill>
+            <Rectangle.Effect>
+                <DropShadowEffect BlurRadius="8" ShadowDepth="0" Color="#e2e2e2"/>
+            </Rectangle.Effect>
+        </Rectangle>
+
+
+        <!-- Rettangolo superiore (Hip Hop) -->
+        <Rectangle Grid.Row="3" Grid.Column="1" RadiusX="8" RadiusY="8" Margin="2">
+            <Rectangle.Fill>
+                <SolidColorBrush Color="#ffffff" />
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle Grid.Row="3" Grid.Column="1" Margin="2" Height="3" VerticalAlignment="Bottom">
+            <Rectangle.Fill>
+                <SolidColorBrush Color="#005fb8" />
+            </Rectangle.Fill>
+        </Rectangle>
+
+        <!-- Rettangolo superiore (Latino) -->
+        <Rectangle Grid.Row="3" Grid.Column="3" RadiusX="8" RadiusY="8" Margin="2">
+            <Rectangle.Fill>
+                <SolidColorBrush Color="#ffffff" />
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle Grid.Row="3" Grid.Column="3" Margin="2" Height="3" VerticalAlignment="Bottom">
+            <Rectangle.Fill>
+                <SolidColorBrush Color="#005fb8" />
+            </Rectangle.Fill>
+        </Rectangle>
+
+        <!-- Rettangolo superiore (Rock) -->
+        <Rectangle Grid.Row="3" Grid.Column="5" RadiusX="8" RadiusY="8" Margin="2">
+            <Rectangle.Fill>
+                <SolidColorBrush Color="#ffffff" />
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle Grid.Row="3" Grid.Column="5" Margin="2" Height="3" VerticalAlignment="Bottom">
+            <Rectangle.Fill>
+                <SolidColorBrush Color="#005fb8" />
+            </Rectangle.Fill>
+        </Rectangle>
+
+        <!-- Rettangolo superiore (Statistiche) -->
+        <Rectangle Grid.Row="3" Grid.Column="7" RadiusX="8" RadiusY="8" Margin="2">
+            <Rectangle.Fill>
+                <SolidColorBrush Color="#ffffff" />
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle Grid.Row="3" Grid.Column="7" Margin="2" Height="3" VerticalAlignment="Bottom">
+            <Rectangle.Fill>
+                <SolidColorBrush Color="#005fb8" />
+            </Rectangle.Fill>
+        </Rectangle>
+
+        
+        <!-- Icona e titolo applicazione -->
+        <Image Grid.Row="1" Grid.Column="7" Width="50" Height="50" HorizontalAlignment="Right" VerticalAlignment="Center" Source="/Images/icon.png"/>
+        <TextBlock Text="discoteca" FontWeight="Bold" Foreground="#005fb8" FontSize="25"
+                   Grid.Row="1" Grid.Column="7" 
+                   HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,60,7" />
+        <TextBlock Text="by Davide La Marca" FontSize="10" FontWeight="SemiBold"
+                   Grid.Row="1" Grid.Column="7" Foreground="#464646"
+                   HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,27,60,0" />
+
+        <!-- Icona di informazioni con testo -->
+        <Image Grid.Row="1" Grid.Column="1" Width="20" Height="20" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="45,0,0,0">
+            <Image.Source>
+                <BitmapImage UriSource="/Images/info.png" />
+            </Image.Source>
+        </Image>
+        <TextBlock Text="Seleziona il genere musicale:" FontWeight="SemiBold"
+                   Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="7" Foreground="#464646"
+                   HorizontalAlignment="Left" VerticalAlignment="Center" Margin="70,0,0,0" />
+
+
+        <!-- Radio Button per selezione del genere musicale -->
+        <RadioButton x:Name="HipHopRadioButton" Content="Hip Hop"
+                     Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="5" HorizontalAlignment="Left" VerticalAlignment="Center"
+                     Checked="HipHop_Checked" BorderBrush="#005fb8" Foreground="#464646" Margin="85,0,0,0"/>
+        <RadioButton x:Name="LatinoRadioButton" Content="Latino"  
+                     Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="4" HorizontalAlignment="Center" VerticalAlignment="Center"
+                     Checked="Latino_Checked" BorderBrush="#005fb8" Foreground="#464646" Margin="15,0,0,0"/>
+        <RadioButton x:Name="RockRadioButton" Content="Rock"
+                     Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="3" HorizontalAlignment="Right" VerticalAlignment="Center"
+                     Checked="Rock_Checked" BorderBrush="#005fb8" Foreground="#464646" Margin="0,0,70,0"/>
+
+
+        <!-- Statistiche generali -->
+        <TextBlock Text="Statistiche" FontWeight="Bold" FontSize="20"
+                   Grid.Row="3" Grid.Column="7" Foreground="#464646"
+                   HorizontalAlignment="Center" VerticalAlignment="Center" />
+        <!-- Canzoni totali -->
+        <TextBlock Text="Canzoni totali" FontSize="15" FontWeight="SemiBold" Margin="0,40,0,0" 
+                   Grid.Row="4" Grid.Column="7" Foreground="#464646"
+                   HorizontalAlignment="Center" VerticalAlignment="Top" />
+        <Label x:Name="CanzoniTotaliLabel" Content="0"
+               Grid.Row="4" Grid.Column="7"  Margin="0,60,0,0"
+               HorizontalAlignment="Center" VerticalAlignment="Top"
+               Foreground="#464646" />
+        <!-- Ascolti totali -->
+        <TextBlock Text="Ascolti totali" FontSize="15" FontWeight="SemiBold" Margin="0,120,0,0" 
+                   Grid.Row="4" Grid.Column="7" Foreground="#464646"
+                   HorizontalAlignment="Center" VerticalAlignment="Top" />
+        <Label x:Name="AscoltiTotaliLabel" Content="0"
+               Grid.Row="4" Grid.Column="7"  Margin="0,140,0,0"
+               HorizontalAlignment="Center" VerticalAlignment="Top"
+               Foreground="#464646" />
+        <!-- Genere preferito -->
+        <TextBlock Text="Genere preferito" FontSize="15" FontWeight="SemiBold" Margin="0,200,0,0" 
+                   Grid.Row="4" Grid.Column="7" Foreground="#464646"
+                   HorizontalAlignment="Center" VerticalAlignment="Top" />
+        <Label x:Name="GenerePreferitoLabel" Content="Nessuno"
+               Grid.Row="4" Grid.Column="7"  Margin="0,220,0,0"
+               HorizontalAlignment="Center" VerticalAlignment="Top"
+               Foreground="#464646" />
+
+
+        <!-- Hip Hop -->
+        <TextBlock Text="Hip Hop" FontWeight="Bold" FontSize="20"
+                   Grid.Row="3" Grid.Column="1" Foreground="#464646"
+                   HorizontalAlignment="Center" VerticalAlignment="Center" />
+        <TextBlock Text="Seleziona la canzone:" FontSize="15" Margin="20,20,0,0"
+                   Grid.Row="4" Grid.Column="1" Grid.RowSpan="2" Foreground="#464646"
+                   HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <!-- ComboBox per canzoni (Hip Hop) -->
+        <ComboBox x:Name="HipHopComboBox" Grid.Row="4" Grid.Column="1" Margin="0,50,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" Width="170" SelectionChanged="HipHopComboBox_SelectionChanged"/>
+        <!-- Bottone di ascolto (Hip Hop) -->
+        <Button x:Name="HipHopButton" Content="Ascolta" BorderThickness="0"
+                Grid.Row="4" Grid.Column="1" Width="170" Height="35"
+                HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,70"      
+                FontWeight="Bold" Foreground="White" Background="#005fb8"
+                Click="HipHopButton_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="8"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+
+        <!-- Latino -->
+        <TextBlock Text="Latino" FontWeight="Bold" FontSize="20"
+                   Grid.Row="3" Grid.Column="3" Foreground="#464646"
+                   HorizontalAlignment="Center" VerticalAlignment="Center" />
+        <TextBlock Text="Seleziona la canzone:" FontSize="15" Margin="20,20,0,0"
+                   Grid.Row="4" Grid.Column="3" Grid.RowSpan="2" Foreground="#464646"
+                   HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <!-- ComboBox per canzoni (Latino) -->
+        <ComboBox x:Name="LatinoComboBox" Grid.Row="4" Grid.Column="3" Margin="0,50,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" Width="170" SelectionChanged="LatinoComboBox_SelectionChanged" />
+        <!-- Bottone di ascolto (Latino) -->
+        <Button x:Name="LatinoButton" Content="Ascolta" BorderThickness="0"
+                Grid.Row="4" Grid.Column="3" Width="170" Height="35"
+                HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,70"      
+                FontWeight="Bold" Foreground="White" Background="#005fb8"
+                Click="LatinoButton_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="8"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+
+        <!-- Rock -->
+        <TextBlock Text="Rock" FontWeight="Bold" FontSize="20"
+                   Grid.Row="3" Grid.Column="5" Foreground="#464646"
+                   HorizontalAlignment="Center" VerticalAlignment="Center" />
+        <TextBlock Text="Seleziona la canzone:" FontSize="15" Margin="20,20,0,0"
+                   Grid.Row="4" Grid.Column="5" Grid.RowSpan="2" Foreground="#464646"
+                   HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <!-- ComboBox per canzoni (Rock) -->
+        <ComboBox x:Name="RockComboBox" Grid.Row="4" Grid.Column="5" Margin="0,50,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" Width="170" SelectionChanged="RockComboBox_SelectionChanged" />
+        <!-- Bottone di ascolto (Rock) -->
+        <Button x:Name="RockButton" Content="Ascolta" BorderThickness="0"
+                Grid.Row="4" Grid.Column="5" Width="170" Height="35"
+                HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,70"      
+                FontWeight="Bold" Foreground="White" Background="#005fb8"
+                Click="RockButton_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="8"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+
+        <!-- Statistiche Hip Hop -->
+        <TextBlock Text="Numero di canzoni" FontSize="15" FontWeight="SemiBold" Margin="0,0,0,120" 
+                   Grid.Row="4" Grid.Column="1" Grid.RowSpan="2" Foreground="#464646"
+                   HorizontalAlignment="Center" VerticalAlignment="Bottom" />
+        <Label x:Name="CanzoniHipHopLabel" Content="0"
+               Grid.Row="4" Grid.Column="1" Margin="0,0,0,70"
+               HorizontalAlignment="Center" VerticalAlignment="Bottom"
+               Foreground="#464646" />
+
+        <TextBlock Text="Numero di ascolti" FontSize="15" FontWeight="SemiBold" Margin="0,0,0,60"
+                   Grid.Row="4" Grid.Column="1" Grid.RowSpan="2" Foreground="#464646"
+                   HorizontalAlignment="Center" VerticalAlignment="Bottom" />
+        <Label x:Name="AscoltiHipHopLabel" Content="0"
+               Grid.Row="4" Grid.Column="1" Margin="0,0,0,10"
+               HorizontalAlignment="Center" VerticalAlignment="Bottom"
+               Foreground="#464646" />
+
+
+        <!-- Statistiche Latino -->
+        <TextBlock Text="Numero di canzoni" FontSize="15" FontWeight="SemiBold" Margin="0,0,0,120" 
+                   Grid.Row="4" Grid.Column="3" Grid.RowSpan="2" Foreground="#464646"
+                   HorizontalAlignment="Center" VerticalAlignment="Bottom" />
+        <Label x:Name="CanzoniLatinoLabel" Content="0"
+               Grid.Row="4" Grid.Column="3" Margin="0,0,0,70"
+               HorizontalAlignment="Center" VerticalAlignment="Bottom"
+               Foreground="#464646" />
+
+        <TextBlock Text="Numero di ascolti" FontSize="15" FontWeight="SemiBold" Margin="0,0,0,60"
+                   Grid.Row="4" Grid.Column="3" Grid.RowSpan="2" Foreground="#464646"
+                   HorizontalAlignment="Center" VerticalAlignment="Bottom" />
+        <Label x:Name="AscoltiLatinoLabel" Content="0"
+               Grid.Row="4" Grid.Column="3" Margin="0,0,0,10"
+               HorizontalAlignment="Center" VerticalAlignment="Bottom"
+               Foreground="#464646" />
+
+
+        <!-- Statistiche Rock -->
+        <TextBlock Text="Numero di canzoni" FontSize="15" FontWeight="SemiBold" Margin="0,0,0,120" 
+                   Grid.Row="4" Grid.Column="5" Grid.RowSpan="2" Foreground="#464646"
+                   HorizontalAlignment="Center" VerticalAlignment="Bottom" />
+        <Label x:Name="CanzoniRockLabel" Content="0"
+               Grid.Row="4" Grid.Column="5" Margin="0,0,0,70"
+               HorizontalAlignment="Center" VerticalAlignment="Bottom"
+               Foreground="#464646" />
+
+        <TextBlock Text="Numero di ascolti" FontSize="15" FontWeight="SemiBold" Margin="0,0,0,60"
+                   Grid.Row="4" Grid.Column="5" Grid.RowSpan="2" Foreground="#464646"
+                   HorizontalAlignment="Center" VerticalAlignment="Bottom" />
+        <Label x:Name="AscoltiRockLabel" Content="0"
+               Grid.Row="4" Grid.Column="5" Margin="0,0,0,10"
+               HorizontalAlignment="Center" VerticalAlignment="Bottom"
+               Foreground="#464646" />
+    </Grid>
+</Window>
